@@ -9,7 +9,7 @@
 }
 /* To banner */
 #topBanner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(245, 104, 169)), url(../images/banner.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(245, 104, 170, 0.808)), url(../images/banner.jpg);
     background-position: center;
     background-size: cover;
     height: 70vh;
@@ -55,4 +55,24 @@
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
+    position: relative;
+    z-index: 1;
+}
+.banner-btn a span {
+    width: 0%;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.banner-btn a:hover span {
+    width: 100%;
+    transition: 0.5s;
+}
+.banner-btn a:hover {
+    color: rgb(245, 104, 170);
+    transition: 0.5s;
 }
