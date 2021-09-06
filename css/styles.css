@@ -76,3 +76,15 @@
     color: rgb(245, 104, 170);
     transition: 0.5s;
 }
+
+@media screen and (max-width: 770px) {
+    #topBanner {
+        height: 50vh;
+    }
+    .banner-text {
+        padding-top: 150px;
+    }
+    .banner-btn {
+        margin: 30px auto 0;
+    }
+}
