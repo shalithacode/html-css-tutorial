@@ -97,6 +97,7 @@
     right: 0;
     top: 0;
     background-color: rgb(146, 39, 119);
+    transition: 0.5s;
 }
 nav ul li {
     list-style: none;
@@ -123,4 +124,5 @@ nav ul li a {
 #menuButton img {
     width: 35px;
     margin: 7.5px;
+    transition: 0.5s;
 }

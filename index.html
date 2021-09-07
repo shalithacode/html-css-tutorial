@@ -36,5 +36,21 @@
         <div id="menuButton">
             <img src="./images/menu.png" id="menuIcon" />
         </div>
+
+        <script>
+            const btn = document.getElementById('menuButton');
+            const navBar = document.getElementById('sideNavigation');
+            const img = document.getElementById('menuIcon');
+            navBar.style.right = '-250px';
+            btn.addEventListener('click', function () {
+                if (navBar.style.right == '-250px') {
+                    navBar.style.right = '0px';
+                    img.src = 'images/cross.png';
+                } else {
+                    navBar.style.right = '-250px';
+                    img.src = 'images/menu.png';
+                }
+            });
+        </script>
     </body>
 </html>
